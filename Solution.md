@@ -55,4 +55,8 @@
 
 ---
 ##495.提莫攻击
-&ensp;&ensp;&ensp;&ensp;维护一个当前负面状态结束时间fT，当下一时间长于fT时，结果直接加上duration；否则相当于延长了一个时间t[i] - t[i-1]
+&ensp;&ensp;&ensp;&ensp;维护一个当前负面状态结束时间fT，当下一时间长于fT时，结果直接加上duration；否则相当于延长了一个时间t[i] - t[i-1]。
+
+---
+##525.连续数组
+&ensp;&ensp;&ensp;&ensp;用一个flag记录当前1比0多的个数，并将首次出现的flag值记录在一个哈希表（或者数组）中，当flag第n次出现时更新最长距离re = max(re, i - M[flag])。记得将M[0]初始化为-1。
